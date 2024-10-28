@@ -159,12 +159,12 @@ const Header = (props) => {
         </NavLink>*/}
 
        
-       {/*} <NavLink
+        <NavLink
           to="/weather-reports"
           className={darkMode ? "nav-link dark-mode" : "nav-link"}>
           Weather Reports
-        </NavLink> */}
-        {/* <NavLink
+        </NavLink> 
+         <NavLink
           to="/login"
           className={darkMode ? "nav-link dark-mode" : "nav-link"}>
           Login
@@ -174,8 +174,8 @@ const Header = (props) => {
           className={darkMode ? "nav-link dark-mode" : "nav-link"}>
           {" "}
           Signup
-        </NavLink> */}
-        {/*<NavLink
+        </NavLink> 
+       {/*} <NavLink
           to="/user"
           className={darkMode ? "nav-link dark-mode" : "nav-link"}>
           {" "}

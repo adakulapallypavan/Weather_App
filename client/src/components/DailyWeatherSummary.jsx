@@ -46,17 +46,19 @@ const DailyWeatherSummary = ({ currentWeatherData, city }) => {
   }, [currentWeatherData, city]);
 
   return (
-    <div>
-      <h2>Daily Weather Summary for {city}</h2>
-      {dailySummary.filter(day => day.city === city).map(day => (
-        <div key={day.date}>
-          <h4>{day.date}</h4>
-          <p>Avg Temp: {Math.round(day.avgTemp)}°C</p>
-          <p>Max Temp: {Math.round(day.maxTemp)}°C</p>
-          <p>Min Temp: {Math.round(day.minTemp)}°C</p>
-          <p>Condition: {day.condition}</p>
-        </div>
-      ))}
+    <div className="daily-summary-widget">
+      <h2>Daily Weather Summary for {/*{city}*/}</h2>
+      <div className="summary-items">
+        {dailySummary.filter(day => day.city === city).map(day => (
+          <div key={day.date} className="summary-item">
+            <h4>{day.date}</h4>
+            <p>Avg Temp: {Math.round(day.avgTemp)}°C</p>
+            <p>Max Temp: {Math.round(day.maxTemp)}°C</p>
+            <p>Min Temp: {Math.round(day.minTemp)}°C</p>
+            <p>Condition: {day.condition}</p>
+          </div>
+        ))}
+      </div>
       {alert && <div className="alert">{alert}</div>}
     </div>
   );

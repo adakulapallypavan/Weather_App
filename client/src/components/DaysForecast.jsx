@@ -1,8 +1,8 @@
 import React from 'react';
 
-const DaysForecast = ({ forecastWeatherData }) => {
+const DaysForecast = ({ forecastWeatherData, darkMode }) => {
   return (
-    <div className="days-forecast">
+    <div className={`days-forecast ${darkMode ? 'dark-mode' : ''}`}>
       {forecastWeatherData.map((forecast, index) => (
         <div key={index} className="forecast-item">
           <h5>{new Date(forecast.dt * 1000).toLocaleDateString()}</h5>

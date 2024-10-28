@@ -1,5 +1,6 @@
 import React from 'react';
 import TimeDate from './TimeDate';
+import DailyWeatherSummary from './DailyWeatherSummary';
 import sunRiseIconDark from '../assets/images/sunrise-icon-dark.png';
 import sunSetIconDark from '../assets/images/sunset-icon-dark.png';
 import windIconDark from '../assets/images/wind-icon-dark.png';
@@ -82,8 +83,10 @@ const CurrentWeather = (props) => {
           <p className="value">8</p>
           <p className="label">UV Index</p>
         </div>
-
+        <h2 className="days-forecast-heading">Days Forecast</h2>
         <DaysForecast forecastWeatherData={forecastWeatherData} />
+        
+        <DailyWeatherSummary currentWeatherData={currentWeatherData} />
       </div>
     </section>
   );

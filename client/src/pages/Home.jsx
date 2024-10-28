@@ -21,10 +21,11 @@ const Home = () => {
         currentWeatherData={currentWeatherData}
         lastUpdated={lastUpdatedFormatted}
         forecastWeatherData={forecastWeatherData}
-        city={city} // Pass city to CurrentWeather
+        city={city}
+        currentWeatherData={currentWeatherData} // Pass city to CurrentWeather
         
       />
-      <DailyWeatherSummary currentWeatherData={currentWeatherData} city={city} />
+      {/*<DailyWeatherSummary currentWeatherData={currentWeatherData} city={city} /> */}
     </div>
   );
 };

@@ -114,12 +114,10 @@ body {
 
 .App {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    93deg,
-    rgba(255, 255, 255, 1) 13%,
-    rgba(134, 134, 134, 1) 75%,
-    rgba(41, 41, 41, 1) 99%
-  );
+  background: linear-gradient(93deg,
+      rgba(255, 255, 255, 1) 13%,
+      rgba(134, 134, 134, 1) 75%,
+      rgba(41, 41, 41, 1) 99%);
   min-height: 100vh;
   height: auto;
   width: 100%;
@@ -133,11 +131,9 @@ body {
 
 .App.dark-mode {
   background: rgb(68, 68, 68);
-  background: linear-gradient(
-    110deg,
-    rgba(68, 68, 68, 0.97) 31%,
-    rgba(55, 54, 54, 1) 57%
-  );
+  background: linear-gradient(110deg,
+      rgba(68, 68, 68, 0.97) 31%,
+      rgba(55, 54, 54, 1) 57%);
 }
 
 .main {
@@ -274,31 +270,44 @@ body {
 /* Main Time Container */
 .time-container {
   display: flex;
-  justify-content: space-between; /* Align items with space between */
-  align-items: center; /* Center items vertically */
-  padding: 1rem; /* Add some padding */
-  width: 100%; /* Full width */
-  text-align: center; /* Center text for the location */
+  justify-content: space-between;
+  /* Align items with space between */
+  align-items: center;
+  /* Center items vertically */
+  padding: 1rem;
+  /* Add some padding */
+  width: 100%;
+  /* Full width */
+  text-align: center;
+  /* Center text for the location */
 }
 
 .time {
-  flex: 1; /* Allow time to take space */
-  text-align: left; /* Align time to the left */
+  flex: 1;
+  /* Allow time to take space */
+  text-align: left;
+  /* Align time to the left */
 }
 
 .location {
-  flex: 2; /* Allow location to take more space for centering */
-  text-align: center; /* Center location text */
+  flex: 2;
+  /* Allow location to take more space for centering */
+  text-align: center;
+  /* Center location text */
 }
 
 .date {
-  flex: 1; /* Allow date to take space */
-  text-align: right; /* Align date to the right */
+  flex: 1;
+  /* Allow date to take space */
+  text-align: right;
+  /* Align date to the right */
 }
 
 .dark-mode {
-  background-color: #333; /* Dark background for dark mode */
-  color: #fff; /* White text for dark mode */
+  background-color: #333;
+  /* Dark background for dark mode */
+  color: #fff;
+  /* White text for dark mode */
 }
 
 
@@ -331,11 +340,9 @@ body {
 }
 
 .temp-deg h3 {
-  background: linear-gradient(
-    80deg,
-    #292929 -2.93%,
-    rgba(255, 255, 255, 0) 212.44%
-  );
+  background: linear-gradient(80deg,
+      #292929 -2.93%,
+      rgba(255, 255, 255, 0) 212.44%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -347,11 +354,9 @@ body {
 }
 
 .current-weather-container.dark-mode .temp-deg h3 {
-  background: linear-gradient(
-    84deg,
-    #fff -16.56%,
-    rgba(255, 255, 255, 0) 118.43%
-  );
+  background: linear-gradient(84deg,
+      #fff -16.56%,
+      rgba(255, 255, 255, 0) 118.43%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -445,74 +450,47 @@ body {
 }
 
 /* ********************************************************* */
-.day-forecast-container {
-  max-width: 50rem;
-  width: 100%;
-  height: auto;
-  background: var(--clr-light-bg);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  color: var(--clr-text-light);
-  padding-block: 1rem;
-  padding-inline: 2rem;
+.days-forecast {
+  display: flex;
+  /* Keep flex display for horizontal alignment */
+  flex-wrap: nowrap;
+  /* Prevent wrapping onto multiple lines */
+  justify-content: space-between;
+  /* Distribute items evenly */
+  margin: 1rem 0;
+  /* Add some margin */
+}
+
+.forecast-item {
+  display: flex;
+  /* Maintain flex for internal layout */
+  flex-direction: column;
+  /* Stack content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  padding: 1rem;
+  /* Add padding */
+  border-radius: 5px;
+  /* Add some border radius */
+  background-color: #fff;
+  /* Example light background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add some shadow */
+  margin: 0 1rem;
+  /* Add margin between items */
+  /* Adjust as needed */
+}
+
+.forecast-item.dark-mode {
+  background-color: #222;
+  /* Example darker background */
+}
+
+.days-forecast-heading {
   text-align: center;
+  margin: 1rem 0;
+  font-weight: bold;
 }
-
-.day-forecast-container h2 {
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.day-forecast {
-  display: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.day-forecast .day-item {
-  display: grid;
-  grid-template-columns: 0.75fr 0.75fr 2fr;
-  gap: 1rem;
-  align-items: center;
-  text-align: left;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.day-forecast .day-item img {
-  width: 3rem;
-  height: 3rem;
-}
-
-.day-forecast .day-item p {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.day-forecast .day-item .date {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-
-/* Dark Mode Styles */
-.dark-mode .days-forecast {
-  background-color: #131322;
-}
-
-.dark-mode .day-forecast {
-  background-color: #1c1c2a;
-}
-
-
 
 /* ************************************************* */
 
@@ -555,12 +533,10 @@ body {
   width: 7rem;
   height: 16.875rem;
   background: rgb(250, 166, 77);
-  background: linear-gradient(
-    93deg,
-    rgba(250, 166, 77, 1) 0%,
-    rgba(252, 197, 138, 1) 29%,
-    rgba(252, 197, 138, 1) 82%
-  );
+  background: linear-gradient(93deg,
+      rgba(250, 166, 77, 1) 0%,
+      rgba(252, 197, 138, 1) 29%,
+      rgba(252, 197, 138, 1) 82%);
 }
 
 .hourly-item.dark-mode {
@@ -621,10 +597,12 @@ body {
   .current-weather-container .grid-container {
     grid-template-columns: 1fr;
   }
+
   .extra-info-div {
     max-width: 20rem;
     width: 100%;
   }
+
   .weather-icon {
     order: -1;
   }
@@ -729,13 +707,15 @@ button:hover {
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 2rem;
-  background-color: #e3eaf5;  /* Soft blue-gray background */
+  background-color: #e3eaf5;
+  /* Soft blue-gray background */
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .dark-mode {
-  background-color: #333a45;  /* Darker slate blue-gray for dark mode */
+  background-color: #333a45;
+  /* Darker slate blue-gray for dark mode */
   color: #ffffff;
 }
 
@@ -749,7 +729,8 @@ button:hover {
 
 .widget {
   flex: 1 1 calc(33.333% - 1.5rem);
-  background-color: #f8f9fc;  /* Light gray with blue undertone for widgets */
+  background-color: #f8f9fc;
+  /* Light gray with blue undertone for widgets */
   padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
@@ -762,7 +743,8 @@ button:hover {
 }
 
 .dark-mode .widget {
-  background-color: #4a5260;  /* Darker blue-gray for widgets in dark mode */
+  background-color: #4a5260;
+  /* Darker blue-gray for widgets in dark mode */
 }
 
 /* Widget-specific styling */
@@ -800,10 +782,32 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .widget {
     flex: 1 1 100%;
   }
 }
- 
+
+.daily-summary-widget {
+  background-color: #fff; /* Or your desired background color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.summary-item {
+  margin-bottom: 10px;
+}
+
+.summary-item h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.summary-item p {
+  margin: 0;
+}

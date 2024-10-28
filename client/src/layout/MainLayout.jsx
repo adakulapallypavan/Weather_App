@@ -100,7 +100,7 @@ const MainLayout = () => {
           }}
         />
       </main>
-      <footer>footer</footer>
+      
     </div>
   );
 };
