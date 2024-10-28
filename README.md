@@ -1,65 +1,53 @@
 
+**Readme**
 
-This repository contains the code for a web development project . The project includes both client-side and server-side components, showcasing a full-stack application.
+**Project Title:** Real-Time Weather Monitoring Application
 
-## Table of Contents
+**Description:**
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [License](#license)
+This web application provides real-time weather information for various locations. It utilizes the OpenWeatherMap API to fetch weather data and displays it in an intuitive user interface.
 
-## Installation
+**Installation:**
 
-1. Clone the repository:
+1. **Clone the Repository:**
 
    ```bash
    git clone https://github.com/adakulapallypavan/Weather_App
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd Web_App
    ```
 
-3. Install the dependencies for both client and server:
+2. **Navigate to the Project Directory:**
 
    ```bash
-   cd client
-   npm install
-   cd ../server
+   cd Weather_App
+   ```
+
+3. **Install Dependencies:**
+
+   ```bash
    npm install
    ```
 
+**Running the Application:**
 
-## Usage
-
-1. Start the server:
-
-   ```bash
-   cd server
-   npm run dev
-   ```
-
-2. Start the client:
+1. **Start the Development Server:**
 
    ```bash
-   cd client
-   npm run dev
+   npm start
    ```
 
-3. Open your browser and go to `http://localhost:5173/` to view the application.
+2. **Access the Application:**
 
-## Project Structure
+   Open your web browser and navigate to `http://localhost:3000`
 
-```bash
+**Project Structure:**
+
+```
 ├── client
 │   ├── public
 │   └── src
 │       ├── components
 │       ├── pages
-│       ├── App.js
+│       ├── App.jsx
 │       └── index.js
 ├── server
 │   ├── controllers
@@ -69,22 +57,17 @@ This repository contains the code for a web development project . The project in
 └── README.md
 ```
 
-## Technologies Used
+**Technologies Used:**
 
-- **Client-side:**
-  - React
-  - CSS
-  - HTML
-  - JavaScript
+- **Frontend:** React, JavaScript, CSS
+- **Backend:** Node.js, Express.js
+- **API:** OpenWeatherMap API
 
-- **Server-side:**
-  - Node.js
-  - Express
-  - MongoDB
-  - JavaScript
+**License:**
 
+This project is licensed under the MIT License.
 
+**Additional Notes:**
 
-## License
+- **API Key:** You will need to obtain an API key from OpenWeatherMap and set it as an environment variable in your project.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
