@@ -38,7 +38,10 @@ This web application provides real-time weather information for various location
    npm run dev
    ```
 
-2. **Access the Application:**
+   cd server
+   npm run dev
+
+3. **Access the Application:**
 
    Open your web browser and navigate to `http://localhost:3000`
 
