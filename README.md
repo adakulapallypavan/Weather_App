@@ -5,11 +5,9 @@ This repository contains the code for a web development project . The project in
 ## Table of Contents
 
 - [Installation](#installation)
-- [Demo](#demo)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
