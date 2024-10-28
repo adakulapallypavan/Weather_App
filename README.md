@@ -32,7 +32,7 @@ This web application provides real-time weather information for various location
 1. **Start the Development Server:**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 2. **Access the Application:**
