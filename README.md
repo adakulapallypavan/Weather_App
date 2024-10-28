@@ -72,5 +72,5 @@ This project is licensed under the MIT License.
 
 **Additional Notes:**
 
-- **API Key:** You will need to obtain an API key from OpenWeatherMap and set it as an environment variable in your project.
+- **API Key:** Ensure you have obtained an API key from OpenWeatherMap and set it in your .env file(VITE_API_KEY and VITE_RAPID_API_KEY).
 
