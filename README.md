@@ -1,6 +1,6 @@
-# Web Semester Project Weather MERN Stack
 
-This repository contains the code for a web development project created as part of a semester course. The project includes both client-side and server-side components, showcasing a full-stack application.
+
+This repository contains the code for a web development project . The project includes both client-side and server-side components, showcasing a full-stack application.
 
 ## Table of Contents
 
@@ -17,13 +17,12 @@ This repository contains the code for a web development project created as part 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Momin-786/Web_Semester_Project.git
-   ```
+   git clone https://github.com/adakulapallypavan/Weather_App
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Web_Semester_Project
+   cd Web_App
    ```
 
 3. Install the dependencies for both client and server:
@@ -35,9 +34,6 @@ This repository contains the code for a web development project created as part 
    npm install
    ```
 
-## Demo
-
-Search For Your City  [Live Demo](https://web-semester-project-brown.vercel.app/).
 
 ## Usage
 
@@ -89,15 +85,7 @@ Search For Your City  [Live Demo](https://web-semester-project-brown.vercel.app/
   - MongoDB
   - JavaScript
 
-## Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
 
 ## License
 
