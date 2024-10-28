@@ -32,6 +32,9 @@ This web application provides real-time weather information for various location
 1. **Start the Development Server:**
 
    ```bash
+
+   cd client
+   
    npm run dev
    ```
 
