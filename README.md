@@ -1,71 +1,59 @@
-# Web Semester Project Weather MERN Stack
 
-This repository contains the code for a web development project created as part of a semester course. The project includes both client-side and server-side components, showcasing a full-stack application.
+**Readme**
 
-## Table of Contents
+**Project Title:** Real-Time Weather Monitoring Application
 
-- [Installation](#installation)
-- [Demo](#demo)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+**Description:**
 
-## Installation
+This web application provides real-time weather information for various locations. It utilizes the OpenWeatherMap API to fetch weather data and displays it in an intuitive user interface.
 
-1. Clone the repository:
+**Installation:**
+
+1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/Momin-786/Web_Semester_Project.git
+   git clone https://github.com/adakulapallypavan/Weather_App
    ```
 
-2. Navigate to the project directory:
+2. **Navigate to the Project Directory:**
 
    ```bash
-   cd Web_Semester_Project
+   cd Weather_App
    ```
 
-3. Install the dependencies for both client and server:
+3. **Install Dependencies:**
 
    ```bash
+   npm install
+   ```
+
+**Running the Application:**
+
+1. **Start the Development Server:**
+
+   ```bash
+
    cd client
-   npm install
-   cd ../server
-   npm install
+   
+   npm run dev
    ```
 
-## Demo
-
-Search For Your City  [Live Demo](https://web-semester-project-brown.vercel.app/).
-
-## Usage
-
-1. Start the server:
-
-   ```bash
    cd server
    npm run dev
-   ```
 
-2. Start the client:
+3. **Access the Application:**
 
-   ```bash
-   cd client
-   npm run dev
-   ```
+   Open your web browser and navigate to `http://localhost:3000`
 
-3. Open your browser and go to `http://localhost:5173/` to view the application.
+**Project Structure:**
 
-## Project Structure
-
-```bash
+```
 ├── client
 │   ├── public
 │   └── src
 │       ├── components
 │       ├── pages
-│       ├── App.js
+│       ├── App.jsx
 │       └── index.js
 ├── server
 │   ├── controllers
@@ -75,30 +63,17 @@ Search For Your City  [Live Demo](https://web-semester-project-brown.vercel.app/
 └── README.md
 ```
 
-## Technologies Used
+**Technologies Used:**
 
-- **Client-side:**
-  - React
-  - CSS
-  - HTML
-  - JavaScript
+- **Frontend:** React, JavaScript, CSS
+- **Backend:** Node.js, Express.js
+- **API:** OpenWeatherMap API
 
-- **Server-side:**
-  - Node.js
-  - Express
-  - MongoDB
-  - JavaScript
+**License:**
 
-## Contributing
+This project is licensed under the MIT License.
 
-Contributions are welcome! Please follow these steps:
+**Additional Notes:**
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
+- **API Key:** Ensure you have obtained an API key from OpenWeatherMap and set it in your .env file(VITE_API_KEY and VITE_RAPID_API_KEY).
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
